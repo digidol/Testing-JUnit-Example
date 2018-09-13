@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>digidol-testing-examples</groupId>
-    <artifactId>testing-junit-example-idea</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>uk.ac.aber.computerscience</groupId>
+    <artifactId>testing-junit-example</artifactId>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,9 +14,6 @@
     </properties>
 
     <dependencies>
-        <!--
-
-        -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
