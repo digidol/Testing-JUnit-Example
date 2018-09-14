@@ -38,6 +38,10 @@ public class ContactManager {
     /**
      * Displays information about this Contact Manager to the output stream. The
      * output includes the filename and the list of contacts.
+     *
+     * TODO: We discussed this method in class. Can we test this method? We discussed
+     * including a new method, e.g. getInformation(), that builds up a string and
+     * returns it. This method can then be used to output that string.
      */
     public void printInformation() {
         System.out.println("My " + fileName + " contacts are:");
@@ -52,6 +56,9 @@ public class ContactManager {
      *
      * @throws IOException
      *             if there is a problem reading the file.
+     *
+     * TODO: Think about how you could test this method. Are there any problems?
+     *
      */
     public void load() throws IOException {
         // read from file
@@ -75,6 +82,9 @@ public class ContactManager {
      *
      * @throws IOException
      *             if there is an error writing the details to file.
+     *
+     * TODO: Think about how you could test this method. Are there any problems?
+     *
      */
     public void save() throws IOException {
 
@@ -103,6 +113,8 @@ public class ContactManager {
      *
      * @return The contact, if found or the value <code>null</code> if no match
      *         was found.
+     *
+     * @throws IllegalArgumentException if the contact parameter is null.
      */
     public Contact find(Contact who) {
 
@@ -120,9 +132,12 @@ public class ContactManager {
     }
 
     /**
+     * Finds a contact that matches the name. This creates a contact
+     * and then calls find(Contact).
      *
-     * @param name
-     * @return
+     * @param name The name to search for.
+     *
+     * @return If the contact is found, it is returned. Otherwise, null is returned.
      */
     public Contact find(String name) {
         return find(new Contact(name));

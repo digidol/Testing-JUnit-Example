@@ -104,6 +104,11 @@ public class Contact implements Comparable<Contact>
     /**
      * Reads the name and phone number details from the keyboard.
      * The values are assigned to the fields (instance variables).
+     *
+     * TODO: Is this a good place to read keyboard input? What
+     * happens if you write a unit test case for this method?
+     * Uncomment the testReadKeyboard() method in ContactTest.
+     * Try to run the test.
      */
     public void readKeyboard() {
         Scanner in = new Scanner(System.in);
@@ -129,6 +134,9 @@ public class Contact implements Comparable<Contact>
      * @param other The other object to compare.
      *
      * @return True if the objects are equal. Otherwise, false.
+     *
+     * TODO look at ContactTest. Can you think of any extra tests? Write those
+     * tests.
      */
     @Override
     public boolean equals(Object other) {
@@ -147,6 +155,8 @@ public class Contact implements Comparable<Contact>
      * name and the phone number.
      *
      * @return A string description.
+     *
+     * TODO some tests for this method.
      */
     @Override
     public String toString() {

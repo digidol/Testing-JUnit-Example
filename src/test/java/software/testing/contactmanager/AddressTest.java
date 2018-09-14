@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Some example tests. There could be more tests for each of the fields
+ * in the class. You could complete those.
+ */
 class AddressTest {
 
     @Test
@@ -48,6 +52,7 @@ class AddressTest {
         // Assert
         assertEquals("Middle", address.getStreetName());
     }
+
 
 
 }
